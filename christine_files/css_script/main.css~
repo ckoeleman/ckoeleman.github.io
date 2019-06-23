@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Esteban);
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Arimo:400,700);
+
 
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
@@ -77,24 +77,24 @@ body{
 }
 
 body {
-    font: 16px/26px "Montserrat", Helvetica, Arial, sans-serif;
+    font: 16px/26px "Arimo", Helvetica, Arial, sans-serif;
     width: 100%;
 }
 
 p, li, h4 {
-    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-family: "Arimo", Helvetica, Arial, sans-serif;
     font-weight: 400;
 }
-
+/* long blue background text */
 p {
-    font-family: "Esteban", Georgia, "Times New Roman", serif;
-    font-size: 26px;
+    font-family: "Arimo", Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
     line-height: 1.35em;
     margin: 0 auto;
     max-width: 780px;
     text-align: center;
 }
-
+/* tabs contact-about me */
 li {
     font-size: 1em;
     line-height: 1.875em;
@@ -102,55 +102,92 @@ li {
 }
 
 
-h1, h2, h3 {
-    color: white;
-    font-family: "Montserrat", Helvetica, Arial, sans-serif;
-    font-size: 50px;
-
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Arimo", Helvetica, Arial, sans-serif;
     line-height: 1.2em;
     text-align: center;
 }
-
+/* 3D title text uppercase */
 h1 {
-    color: #3D4653;
+    color: black;
         text-transform: uppercase;
-        font-size: 40px;
+        font-size: 3em;
+        font-weight: 700;
+        width: 100%;
 }
-
+/* all titles in combo with class */
 h2 {
     color: white;
     display: table;
-    font-family: "Montserrat", Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    margin: 0 auto 20px auto;
+    font-size: 2em;
+    margin: 0 auto 1em auto;
     width: auto;
-    letter-spacing: -0.05em;
+    letter-spacing: 0.00em;
     font-weight: 700;
 }
-
+/* email adress */
 h3 {
-    font-size: 1.125em;
+    font-size: 1.12em;
+    font-weight: 400;
 }
-
+/* not in use */
 h4 {
     font-style: italic;
     font-size: 1em;
     margin: 0;
     padding: 0;
 }
-
+/* title work page */
+h5 {
+    color: white;
+    display: table;
+    font-size: 2em;
+    margin: 0 auto 1em auto;
+    width: 65%;
+    letter-spacing: 0.00em;
+    font-weight: 700;
+    line-height: 1.1em;
+    
+}
+/* text work page */
+h6 {
+    color: white;
+    display: table;
+    font-size: 1.1em;
+    margin: 0 auto -1.0em auto;
+    width: 65%;
+    letter-spacing: 0.00em;
+    font-weight: 400;
+  
+}
 a {
     text-decoration: none!important;
 }
-
+/* DOET NIETS? */
 @media all and (max-width: 600px) {
     p {
         font-size: 1em;
-        line-height: 1.75em;
+        line-height: 1.3em;
     }
+    h1 {
+        font-size: 40px;
+        line-height: 1.3em;
+    }
+    h2 {
+        font-size: 40px;
+        line-height: 1.3em;
+    }
+   
+    h5 {
+        font-size: 40px;
+        line-height: 1.3em;
+    }
+    h6 {
+        font-size: 40px;
+        line-height: 1.3em;
+    }
+       
 }
-
-
 
 
 
@@ -169,39 +206,48 @@ a {
    WIDE: Header
    ========================================================================== */
 
-    .header-container {
+.header-container {
         width: 100%;
         min-height:100%; position:relative;
 
     }
-
+/* h2 dare to be different!!!!! in class */
 .lead{
 	color: #3D4653;
 	display: block;
-	font-family: "Esteban", Georgia, "Times New Roman", serif;
-	font-size: 26px;
+	font-family: "Arimo", Helvetica, Arial, sans-serif;
+	font-size: 0.8em;
 	text-transform: none;
-	margin-bottom: 0px;
-	font-weight: normal;
+	margin-bottom: 0em;
+	font-weight: 400;
 }
-
+/* h2 pagina titles nwe waarden #whoiam is section id */
 #whoiam h2{
-	font-size: 55px;
+	font-size: 3.5em;
+	margin-bottom: 0.5em;
 }
 
 #whoiam p{
-	margin-bottom: 55px;
+	margin-bottom: 1em;
 }
 
 #contact h2{
-	font-size: 55px;
-}
+	font-size: 3.5em;
+	}
 
 #work h2{
-	font-size: 55px;
+	font-size: 3.5em;
+	
+}
+
+#services1 h2{
+	font-size: 3.5em;
+	
 }
 
 
+
+/* not sure */
     .header {
     position:absolute; 
     top:0; 
@@ -210,7 +256,7 @@ a {
     height:100%;
 
     }
-
+/* omschrijving logo top */
 #logo-group {
     width: 800px;
 height: 300px;
@@ -220,7 +266,7 @@ left: 50%;
 margin-top: -330px;
 margin-left: -400px;
 }
-
+/*  */
         #logo {
             float: left;
             margin: 0 auto;
@@ -258,16 +304,17 @@ margin-left: -400px;
     width: 90%;
     margin-left: -45%;
 }
-
+/* hier wordt de afmeting van de logo + title bepaald bij klein scherm 0.7 is dare to be en 2 is title */
 }
 
 @media all and (max-width: 500px) {
 	#logo-group h1 .lead{
-		font-size: 20px;
+		font-size: 0.7em;
 	}
 	#logo-group h1{
-		font-size: 40px;
+		font-size: 2em;
 	}
+	
 }
 
 /* ============
@@ -310,7 +357,7 @@ nav a {
     text-transform: uppercase;
     font-size: .8125em;
     letter-spacing: .15em;
-    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-family: "Arimo", Helvetica, Arial, sans-serif;
     padding: 2em;
 }
 
@@ -410,7 +457,7 @@ nav a {
                     text-transform: uppercase;
                     font-size: .8125em;
                     letter-spacing: .15em;
-                    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+                    font-family: "Arimo", Helvetica, Arial, sans-serif;
                     padding: 1em;
                     color: #222;
                 }
@@ -501,7 +548,7 @@ nav a {
     margin: 0 auto;
     overflow: auto;
      }
-
+/*zet breedte van blauwe text deel */
 .main p {
     max-width: 850px;
     text-align: center;
@@ -509,7 +556,7 @@ nav a {
     padding: 0 10%;
 }
 
-
+/*bepaald margins onder boven bij verkleinen scherm*/
 
 @media all and (max-width: 770px) {
     .scroll {
@@ -531,7 +578,7 @@ nav a {
 
 
 /******* Main BG colors *******/
-
+/*bepaald kleur text deel*/
 #whoiam {
     background-color: #62D6F8; 
 }
@@ -558,7 +605,7 @@ nav a {
 
 #why li {
     text-transform: uppercase;
-    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-family: "Arimo", Helvetica, Arial, sans-serif;
     font-weight: 400;
     letter-spacing: .15em;
     color: #62D6F8;
@@ -690,8 +737,8 @@ nav a {
 }
 
 .process-text h3 {
-    font-family: "freight-big-pro";
-    font-weight: 400;
+    font-family: "Arimo";
+    font-weight: bold;
     text-transform: uppercase;
     font-size: 2.625em;
     line-height: 2.625em;
@@ -936,14 +983,16 @@ nav a {
 
 #contact h2, #contact h3, #contact p {
     color: #1D1D1F;
+    
 }
 
 #contact p{
 	margin-bottom: 50px;
+	
 }
-
+/*email anchor size*/
 #contact a {
-    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-family: "Arimo", Helvetica, Arial, sans-serif;
     color: #62D6F8;
     text-decoration: none;
     -webkit-transition: all 0.3s ease-in-out;
@@ -952,7 +1001,7 @@ nav a {
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
 
 }
 
@@ -967,11 +1016,11 @@ nav a {
    Media Queries
    ========================================================================== */
 @media screen and (max-width: 500px) {
-	#work h2, #contact h2 {
+	#work h2, #contact h2, #services1 h2 {
 		font-size: 35px;
 	}
 	#whoiam h2{
-			font-size: 45px;
+			font-size: 35px;
 	}
 }
 
@@ -1250,7 +1299,7 @@ nav a {
   color: #62D6F8;
   text-transform: uppercase;
   text-decoration: none;
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Arimo", Helvetica, Arial, sans-serif;
   font-size: 12px;
   padding-bottom: 5px;
   display: table;
@@ -1277,7 +1326,7 @@ nav a {
   height: 100%;
 }
 #work .work-detail .images .credit {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Arimo", Helvetica, Arial, sans-serif;
   padding-top: 30px;
   padding-bottom: 70px;
   line-height: 18px;
@@ -1441,4 +1490,49 @@ body.modal-open {
 	padding: 80px 0;
 	margin: 0 auto;
 	overflow: hidden;
+}
+
+/* ============
+    PROJECTS: WORK EXAMPLES
+   ============ */
+ /* hier word de work pagina fonts in classes gezet*/  
+   .worktitle{
+	color: white;
+    display: table;
+    font-size: 26px;
+    margin: 0 auto 1em auto;
+    width: 60%;
+    letter-spacing: 0.00em;
+    font-weight: 700;
+    line-height: 1.1em;
+    text-align: center;
+    }
+    
+     .worktext{
+	color: white;
+    display: table;
+    font-size: 16px;
+    margin: 0 auto 1.0em auto;
+    width: 60%;
+    letter-spacing: 0.00em;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5em;
+    }
+    
+ @media all and (max-width: 400px) {
+    .worktext {
+        font-size: 1em;
+         line-height: 1.3em;
+  
+    }   
+   
+    @media all and (max-width: 400px) {
+    .worktitle {
+        font-size: 2em;
+         line-height: 1.2em;
+  
+    }   
+   
+	
 }

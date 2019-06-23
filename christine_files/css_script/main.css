@@ -275,7 +275,8 @@ margin-left: -400px;
             clear: both;
             width: 100%;
             text-align: center;
-            top: 15%;
+            top: 5%;
+            /* top: 5% is afstand logo naar boven of onder */
         }
 
         #logo img {
@@ -292,9 +293,9 @@ margin-left: -400px;
     width: 100%;
     position: relative;
     z-index: 99;
-    top: 20%;
+    top: 10%;
 }
-
+/* top: 10% afstand "van top "stand out en......" naar boven of onder */
 
 
 @media all and (max-width: 770px) {
@@ -304,7 +305,7 @@ margin-left: -400px;
     width: 90%;
     margin-left: -45%;
 }
-/* hier wordt de afmeting van de logo + title bepaald bij klein scherm 0.7 is dare to be en 2 is title */
+/* hier wordt de afmeting van de logo + title bepaald bij klein scherm 0.7 stand out en grow..... 2 is title */
 }
 
 @media all and (max-width: 500px) {
@@ -568,7 +569,7 @@ nav a {
     }
 
     .main h2+p {
-        margin-top: 60px;
+        margin-top: 40px;
     }
 }
 
